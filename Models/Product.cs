@@ -11,6 +11,8 @@ namespace FarmCentralProto.Models
         // Foreign key 
         [Display(Name = "Farmer")]
         public int FarmerID { get; set; }
+       
+        
         [ForeignKey("FarmerID")]
         public virtual Farmer Farmers { get; set; }
 
